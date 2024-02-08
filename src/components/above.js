@@ -82,7 +82,7 @@ function Above(props) {
 
                 </div>
                 <div className="mt-2 w-1/3 flex justify-end mr-5 mb-1">
-                    <a href="#jaime mon lead" className=" blueTextColor text-sm flex extraBold800 text-end uppercaseText text-[14px] hover:underline">tout voir</a>
+                    <a href="#jaime pas mon lead" className=" blueTextColor text-sm flex extraBold800 text-end uppercaseText text-[14px] hover:underline">tout voir</a>
                 </div>
             </div>
 

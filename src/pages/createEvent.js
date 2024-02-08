@@ -8,6 +8,7 @@ import { useForm } from "react-hook-form";
 import { getUserSession } from "../api/session";
 import { addEvent, uploadImage } from "../api/event";
 import { useHistory } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export default function CreateEventMain() {
     let history = useHistory();
@@ -66,11 +67,11 @@ export default function CreateEventMain() {
     return <div className="newEvent h-full ">
         <div className="top flex border-b-2 border-neutral-200 p-4">
             <div className="w-1/3 flex items-center ml-4">
-                <a href="/act" >
+                <Link to="/act" >
                     <button type="button">
                         <img src="img/icon/arrow.svg" alt="arrow make it blue" />
                     </button>
-                </a>
+                </Link>
             </div>
             <div className="w-1/3 flex items-center justify-center">
                 <h1 className="fontColor3C extraBoldNunito text-2xl">Créer une action</h1>

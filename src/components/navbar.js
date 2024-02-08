@@ -1,6 +1,7 @@
 import { Disclosure, Menu } from '@headlessui/react'
 import { useEffect, useState } from "react";
 import { getUserSession } from "../api/session";
+import { Link } from 'react-router-dom';
 
 const earthSelected = <img src='img/icon/earth/earth.png' className=' w-6 ' alt='earth make it blue'/>
 const earth = <img src='img/icon/earth/greyEarth.png' className='w-6 ' alt='earth make it blue' />
@@ -80,8 +81,9 @@ function Navbar() {
                       {item.svg}
                     </div>
 
-                    <a key={item.name}
-                      href={item.href}
+                    <Link to={item.href}
+                    key={item.name}
+                      
                       className={classNames(
                         item.current ? ' text-cyan-400 ml-6' : 'text-zinc-400 ml-6',
                         ' px-3 py-2 text-sm font-medium '
@@ -90,7 +92,7 @@ function Navbar() {
                     >
 
                       {item.name}
-                    </a>
+                    </Link>
 
                   </div>
 
@@ -112,12 +114,12 @@ function Navbar() {
               className="relative rounded-full text-gray-400 p-4 flex items-center"
             >
               <img src='img/icon/coin.png' className='h-7 absolute' alt="coin make it blue" />
-              <a href='/shop' className='ml-8 extraBoldNunito fontBell'>{user.Money}</a>
+              <Link to='/shop' className='ml-8 extraBoldNunito fontBell'>{user.Money}</Link>
 
             </button>
             <Menu as="div" className="relative ml-3">
               <div>
-                <a href='/profil'>
+                <Link to='/profil'>
                   <Menu.Button className="relative flex rounded-full text-sm p-4" >
 
                     <div id="progressBar" className='profileImgNav mr-4 flex items-center justify-center'>
@@ -135,7 +137,7 @@ function Navbar() {
                     </div>
 
                   </Menu.Button>
-                </a>
+                </Link>
               </div>
             </Menu>
           </div>

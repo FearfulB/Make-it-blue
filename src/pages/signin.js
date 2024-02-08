@@ -3,6 +3,7 @@ import { getUsers, getUser } from "../api/user";
 import { setUserSession } from "../api/session";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 var sha1 = require('sha1');
 
@@ -40,12 +41,12 @@ function Signin(props) {
   }
   return (
     <div className="h-screen w-full flex flex-col items-center justify-center z-20 bg-white container mx-auto px-4">
-      <a href="signup">
+      <Link to="signup">
         <button className="whiteButton absolute h-[48px] w-[119px] bg-white top-5 right-5 blueTextColor px-3 py-1
                      rounded-[15px] border border-neutral-200 rounded-lg blackNunito uppercase text-[13px]">
           S'inscrire
         </button>
-      </a>
+      </Link>
 
       <div className="title h-1/3 flex items-end">
         <h1 class=" grid place-content-center text font-medium blackNunito titleFont text-[26px] ">Connexion</h1>

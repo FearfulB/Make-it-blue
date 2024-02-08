@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { setUserSession } from "../api/session";
+import { Link } from 'react-router-dom';
 
 function Signup(props) {
     let history = useHistory();
@@ -36,12 +37,12 @@ function Signup(props) {
     return <div className="h-screen w-full flex flex-col items-center justify-center z-20 bg-white container mx-auto px-4 mt-">
 
         <div className="title flex lg:items-center items-end">
-            <a href="signin">
+            <Link to ="signin">
                 <button class="whiteButton absolute h-[48px] w-[119px] bg-white top-5 right-5 blueTextColor px-3 py-1
                      rounded-[15px] border border-neutral-200 rounded-lg blackNunito uppercase text-[13px]">
                     Connexion
                 </button>
-            </a>
+            </Link>
             <h1 class=" grid place-content-center text font-medium blackNunito titleFont text-[26px] ">Créer ton profil</h1>
         </div>
         <div className="text h-2/3 mt-4 w-full">

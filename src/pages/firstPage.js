@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function FirstPage() {
     return <div className="md:container md:mx-auto flex-col md:flex-row flex items-center justify-center min-h-screen space-y-4">
 
@@ -12,21 +14,25 @@ export default function FirstPage() {
                 </p>
 
                 <div className="mt-8 flex justify-center">
-                    <a href="signup">
+
+                    <Link to="signup">
                         <button class="text-[13px] blueButton text-white font-bold py-2 px-4
                         rounded-xl lg:w-[330px] w-56 uppercaseText text-12 blackNunito">
                             C'est Parti !
                         </button>
-                    </a>
+                    </Link>
+
 
                 </div>
                 <div className="pt-4 flex justify-center">
-                    <a href="signin">
+
+                    <Link to="signin">
                         <button class="lg:w-[330px] w-56 text-[13px] h-[50px] bg-white blueTextColor whiteButton font-bold py-2 px-4 
                      rounded-xl border border-neutral-200 uppercaseText text-12 blackNunito">
                             J'ai déjà un compte
                         </button>
-                    </a>
+                    </Link>
+
                 </div>
             </div>
 

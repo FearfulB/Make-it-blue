@@ -23,7 +23,7 @@ const SDK3DVerse = window.SDK3DVerse;
 
 function App(props) {
 
-  return <Router>
+  return <Router basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route exact path="/">
         <FirstPage />

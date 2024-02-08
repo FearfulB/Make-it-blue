@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function ValidePing(props) {
     return  <div className="absolute bottom-0 right-0 z-30">
                 <div className=" z-40 flex ">
@@ -6,11 +8,11 @@ export default function ValidePing(props) {
                             <div className="talktext py-5 px-4">
                                 <p className=" mt-8 px-4 fontColor3C extraBoldNunito text-xl">Es-tu sûr de vouloir créer une <br /> action ici ?</p>
                                 <div className="flex justify-between ml-4 mt-4">
-                                    <a href="createEvent">
+                                    <Link to="createEvent">
                                         <button className="blueButtonEvent rounded-xl text-white px-6 py-4 blackNunito text-xs uppercaseText">
                                             Créer une action
                                         </button>
-                                    </a>
+                                    </Link>
                                     <button onClick={props.handlePing} className="whiteButton bg-white rounded-xl border-2 border-neutral-200 px-6 py-2 blueTextColor blackNunito text-xs uppercaseText">
                                         Annuler
                                     </button>
