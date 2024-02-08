@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "proxy": "http://localhost:3000",
   "private": true,
-  "homepage": "https://mateoSquare.github.io/Make-it-blue",
+  "homepage": "https://fearfulB.github.io/Make-it-blue",
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
