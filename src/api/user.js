@@ -1,6 +1,6 @@
 export const addUser = async (user) => {
     await fetch(
-        'http://localhost:4444/user/insert', {
+        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/user/insert', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -15,7 +15,7 @@ export const addUser = async (user) => {
 
 export const getUsers = async () => {
     const response = await fetch(
-        'http://localhost:4444/user/all', {
+        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/user/all', {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
@@ -29,7 +29,7 @@ export const getUsers = async () => {
 
 export const getUser = async (id) => {
     const response = await fetch(
-        'http://localhost:4444/user', {
+        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/user', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

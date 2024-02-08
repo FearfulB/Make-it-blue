@@ -1,6 +1,6 @@
 export const getEvent = async (id) => {
     const response = await fetch(
-        'http://localhost:4444/event', {
+        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/event', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -15,7 +15,7 @@ export const getEvent = async (id) => {
 
 export const getLastEvent = async (id) => {
     const response = await fetch(
-        'http://localhost:4444/last/event', {
+        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/last/event', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -30,7 +30,7 @@ export const getLastEvent = async (id) => {
 
 export const getFavoriteEvent = async (id) => {
     const response = await fetch(
-        'http://localhost:4444/favorite/event', {
+        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/favorite/event', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -45,7 +45,7 @@ export const getFavoriteEvent = async (id) => {
 
 export const getTypeEventUser = async (id) => {
     const response = await fetch(
-        'http://localhost:4444/type/event/user', {
+        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/type/event/user', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -60,7 +60,7 @@ export const getTypeEventUser = async (id) => {
 
 export const getTypeEvent = async () => {
     const response = await fetch(
-        'http://localhost:4444/type/event', {
+        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/type/event', {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
@@ -74,7 +74,7 @@ export const getTypeEvent = async () => {
 
 export const addEvent = async (event) => {
     await fetch(
-        'http://localhost:4444/event/insert', {
+        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/event/insert', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -89,7 +89,7 @@ export const addEvent = async (event) => {
 
 // export const uploadImage = async (image) => {
 //     await fetch(
-//         'http://localhost:4444/upload', {
+//         'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/upload', {
 //             method: 'POST',
 //             headers: {
 //                 'Content-Type': image.type
