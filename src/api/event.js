@@ -1,6 +1,6 @@
 export const getEvent = async (id) => {
     const response = await fetch(
-        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/event', {
+        'https://leguyader.alwaysdata.net/event', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -15,7 +15,7 @@ export const getEvent = async (id) => {
 
 export const getLastEvent = async (id) => {
     const response = await fetch(
-        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/last/event', {
+        'https://leguyader.alwaysdata.net/last/event', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -30,7 +30,7 @@ export const getLastEvent = async (id) => {
 
 export const getFavoriteEvent = async (id) => {
     const response = await fetch(
-        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/favorite/event', {
+        'https://leguyader.alwaysdata.net/favorite/event', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -45,7 +45,7 @@ export const getFavoriteEvent = async (id) => {
 
 export const getTypeEventUser = async (id) => {
     const response = await fetch(
-        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/type/event/user', {
+        'https://leguyader.alwaysdata.net/type/event/user', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -60,7 +60,7 @@ export const getTypeEventUser = async (id) => {
 
 export const getTypeEvent = async () => {
     const response = await fetch(
-        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/type/event', {
+        'https://leguyader.alwaysdata.net/type/event', {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
@@ -74,7 +74,7 @@ export const getTypeEvent = async () => {
 
 export const addEvent = async (event) => {
     await fetch(
-        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/event/insert', {
+        'https://leguyader.alwaysdata.net/event/insert', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -89,7 +89,7 @@ export const addEvent = async (event) => {
 
 // export const uploadImage = async (image) => {
 //     await fetch(
-//         'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/upload', {
+//         'https://leguyader.alwaysdata.net/upload', {
 //             method: 'POST',
 //             headers: {
 //                 'Content-Type': image.type

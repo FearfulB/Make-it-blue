@@ -1,6 +1,6 @@
 export const setUserSession = async (user) => {
     await fetch(
-        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/setUserSession', {
+        'https://leguyader.alwaysdata.net/setUserSession', {
             method: 'POST',
             credentials: 'include',
             headers: {
@@ -15,7 +15,7 @@ export const setUserSession = async (user) => {
 
 export const getUserSession = async () => {
     const response = await fetch(
-        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/getUserSession', {
+        'https://leguyader.alwaysdata.net/getUserSession', {
             method: 'GET',
             credentials: 'include',
             headers: {

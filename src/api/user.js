@@ -1,6 +1,6 @@
 export const addUser = async (user) => {
     await fetch(
-        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/user/insert', {
+        'https://leguyader.alwaysdata.net/user/insert', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
@@ -15,7 +15,7 @@ export const addUser = async (user) => {
 
 export const getUsers = async () => {
     const response = await fetch(
-        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/user/all', {
+        'https://leguyader.alwaysdata.net/user/all', {
             method: 'GET',
             headers: {
                 'Accept': 'application/json',
@@ -29,7 +29,7 @@ export const getUsers = async () => {
 
 export const getUser = async (id) => {
     const response = await fetch(
-        'https://codesandbox.io/p/github/NattanGTech/Backend-MIB/main?workspaceId=b8f4b372-d0d3-4f67-98d0-abac6f626da6/user', {
+        'https://leguyader.alwaysdata.net/user', {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
