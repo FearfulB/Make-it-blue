@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Page Not Found</title>
+</head>
+<body>
+    <script>
+        const path = document.location.pathname;
+        if (path !== '/' && path.slice(-1) === '/') {
+            document.location.replace(path.slice(0, -1));
+        } else {
+            document.location.replace('/404.html');
+        }
+    </script>
+</body>
+</html>
