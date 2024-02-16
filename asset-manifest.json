@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/Make-it-blue/static/css/main.d883a5e7.css",
-    "main.js": "/Make-it-blue/static/js/main.6d8a3701.js",
+    "main.js": "/Make-it-blue/static/js/main.13650fbe.js",
     "static/js/592.849b7f5e.chunk.js": "/Make-it-blue/static/js/592.849b7f5e.chunk.js",
     "static/media/bell2.png": "/Make-it-blue/static/media/bell2.61b5369dd2f1b38ed9c9.png",
     "static/media/allActionBanner.svg": "/Make-it-blue/static/media/allActionBanner.87f5877ced8bb66362d7.svg",
     "index.html": "/Make-it-blue/index.html",
     "static/media/hearth.svg": "/Make-it-blue/static/media/hearth.63ecdb78c24d5242f588.svg",
     "main.d883a5e7.css.map": "/Make-it-blue/static/css/main.d883a5e7.css.map",
-    "main.6d8a3701.js.map": "/Make-it-blue/static/js/main.6d8a3701.js.map",
+    "main.13650fbe.js.map": "/Make-it-blue/static/js/main.13650fbe.js.map",
     "592.849b7f5e.chunk.js.map": "/Make-it-blue/static/js/592.849b7f5e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d883a5e7.css",
-    "static/js/main.6d8a3701.js"
+    "static/js/main.13650fbe.js"
   ]
 }
